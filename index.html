@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400">
+    <title>ouresti</title>
+    <!-- font -->
+    <link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="./images/favicon.png">
+</head>
+
+<body>
+    <!--로딩페이지 -->
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+
+        <p>안녕하세요 :&#41; </p>
+        <p>こんにちは.</p>
+        <p>您好!</p>
+        <p>Hello.</p>
+        <p>Hola.</p>
+        <p>Bonjour.</p>
+    </div>
+
+    <div id="cursor">
+        <div class="cursor__circle"></div>
+    </div>
+
+    <!-- 비디오 요소 -->
+    <video id="randomVideo" autoplay loop muted>
+        <source id="videoSource" src="./videos/v1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- 헤더 -->
+    <header>
+        <a href="./index.html"><img src="./images/logo_b.png" alt="브랜드로고" class="logo_b"></a>
+
+        <ul class="nav">
+            <li><a href="./sub/about.html">ABOUT</a></li>
+            <li><a href="./sub/shop.html">SHOP</a></li>
+            <li><a href="./sub/community.html">COMMUNITY</a></li>
+            <li><a href="./sub/withus.html">WITH US</a></li>
+        </ul>
+
+        <ul class="side_menu">
+            <li><a href="./sub/login.html">Login</a></li>
+            <li><a href="#none">Cart</a></li>
+            <!-- 검색창 -->
+            <li>
+                <!-- 검색 아이콘 -->
+                <a href="#none" class="no_hover"><img src="./images/search_icon.png" alt="검색창 아이콘"></a>
+
+                <!-- 풀 페이지 검색창 -->
+                <div class="search_wrap">
+                    <a href="#none" class="x_btn"></a>
+
+                    <form class="search">
+                        <h1>What are you looking for?</h1>
+                        <input type="text" placeholder="Start Typing...">
+                        <button class="btn" type="submit" cursor-class="arrow"> Press enter to begin your
+                            search</button>
+                    </form>
+
+                </div>
+
+            </li>
+        </ul>
+    </header>
+    <!-- 헤더 -->
+
+    <!-- 내용 -->
+    <div class="main">
+        <!-- 흘러가는 글자 -->
+        <div class="marquee">
+            <div></div>
+        </div>
+
+        <div class="con_wrap">
+            <div class="circle" cursor-class="arrow" onmouseover="playRandomVideo('Our')" onmouseout="hideVideo()">
+                <a href="./sub/about.html" class="text_box">
+                    <span class="in_txt">Our</span>
+                </a>
+            </div>
+
+            <div class="circle" cursor-class="arrow" onmouseover="playRandomVideo('Rest')" onmouseout="hideVideo()">
+                <a href="./sub/community.html" class="text_box">
+                    <span class="in_txt">Rest</span>
+                </a>
+            </div>
+            <div class="circle" cursor-class="arrow" onmouseover="playRandomVideo('Tea')" onmouseout="hideVideo()">
+                <a href="./sub/shop.html" class="text_box">
+                    <span class="in_txt">Tea</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 내용 -->
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="left_box">
+            <p>
+                26, Jungang-daero, <br>
+                Jung-gu, Busan, <br>
+                Republic of Korea (48942)
+            </p>
+
+            <p>
+                Tel. <br>
+                051.2024.0719
+            </p>
+
+            <p>
+                Mail. <br>
+                OuResTi99@gmail.com
+            </p>
+        </div>
+
+        <div class="sns_wrap">
+            <a href="#none" class="sns_on"><img src="./images/sns_f.png" alt="페이스북"></a>
+            <a href="#none" class="sns_on"><img src="./images/sns_i.png" alt="인스타그램"></a>
+            <a href="#none" class="sns_on"><img src="./images/sns_t.png" alt="트위터"></a>
+            <a href="#none" class="sns_on"><img src="./images/sns_y.png" alt="유튜브"></a>
+        </div>
+
+        <div class="right_box">
+            <a href="#" class="b2b_login">O'PARTNER ADMIN↗</a>
+            <p>Copyright ⓒ ouresti., Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- 푸터 -->
+
+    <!-- 문의창 -->
+    <div class="popup_box"><a href="#none" class="help" cursor-class="arrow"></a></div>
+
+    <div class="popup">
+        <img src="./images/popup_bg.png" alt="문의창배경">
+        <img src="./images/pop_btn.png" alt="문의하기 버튼 이미지" class="pop_btn">
+        <div class="popup_in">
+            <img src="./images/pop_home.png" alt="홈 버튼 이미지" class="pop_home">
+            <img src="./images/pop_conver.png" alt="대화 버튼 이미지" class="pop_conver">
+            <img src="./images/pop_setting.png" alt="설정 버튼 이미지" class="pop_conver">
+        </div>
+    </div>
+    <!-- 문의창 -->
+
+
+
+    <!-- js -->
+    <script src="./script/jquery-3.7.1.min.js"></script>
+    <script src="./script/js/index.js"></script>
+    <!-- js -->
+</body>
+
+</html>

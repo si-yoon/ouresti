@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400">
+    <title>Login</title>
+    <!-- 폰트  -->
+    <link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/login.css">
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="../images/favicon.png">
+</head>
+
+<body>
+
+
+    <div class="bg_bb">
+        <img src="../images/bb_6.png" alt="배경 버블 이미지1">
+        <img src="../images/bb_7.png" alt="배경 버블 이미지2">
+        <img src="../images/bb_8.png" alt="배경 버블 이미지3">
+        <img src="../images/bb_11.png" alt="배경 버블 이미지4">
+        <img src="../images/bb_4.png" alt="배경 버블 이미지5">
+        <img src="../images/bb_5.png" alt="배경 버블 이미지5">
+    </div>
+
+    <!-- 마우스 -->
+    <div id="cursor">
+        <div class="cursor__circle"></div>
+    </div>
+    <!-- 마우스 -->
+
+    <!-- 헤더 -->
+    <header>
+        <a href="../index.html"><img src="../images/logo_b.png" alt="로고" class="main_logo"></a>
+
+        <div class="nav1">
+            <!-- 메뉴 버튼 -->
+            <button class="menu-btn">
+                <span class="content">
+                    <span class="text">MENU</span>
+                    <span class="text">CLOSE</span>
+                </span>
+            </button>
+
+            <!-- 메뉴 네비 -->
+            <nav class="nav">
+
+                <div class="nav__inner">
+                    <div class="nav--transition-slide"></div>
+
+                    <div class="nav--items">
+                        <div class="nav--item">
+                            <div class="nav--item-link">
+                                <a href="../sub/about.html" class="nav--link" cursor-class="arrow">
+                                    <span class="nav--link-text" data-text="ABOUT">ABOUT</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav--item">
+                            <div class="nav--item-link">
+                                <a href="../sub/shop.html" class="nav--link" cursor-class="arrow">
+                                    <span class="nav--link-text" data-text="SHOP">SHOP</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav--item">
+                            <div class="nav--item-link">
+                                <a href="../sub/community.html" class="nav--link" cursor-class="arrow">
+                                    <span class="nav--link-text" data-text="COMMUNITY">COMMUNITY</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="nav--item">
+                            <div class="nav--item-link">
+                                <a href="../sub/withus.html" class="nav--link" cursor-class="arrow">
+                                    <span class="nav--link-text" data-text="WITH US">WITH US</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="nav--item">
+                            <div class="nav--item-link">
+                                <a href="#" class="nav--link" cursor-class="arrow">
+                                    <span class="nav--link-text" data-text="MY PAGE">MY PAGE</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="nav--item">
+                            <div class="nav--item-link">
+                                <a href="../sub/login.html" class="nav--link" cursor-class="arrow">
+                                    <span class="nav--link-text" data-text="LOGIN">LOGIN</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav--item">
+                            <div class="nav--item-link">
+                                <a href="#" class="nav--link">
+                                    <span class="nav--link-text"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav--item">
+                            <div class="nav--item-link">
+                                <a href="#" class="nav--link">
+                                    <span class="nav--link-text"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+
+            <!-- 검색창 -->
+            <div>
+                <!-- 검색 아이콘 -->
+                <a href="#none" class="no_hover"><img src="../images/search_icon.png" alt="검색창 아이콘"></a>
+
+                <!-- 풀 페이지 검색창 -->
+                <div class="search_wrap">
+                    <!-- 엑스버튼 -->
+                    <a href="#none" class="x_btn"></a>
+
+                    <form class="search">
+                        <h1>What are you looking for?</h1>
+                        <input type="text" placeholder="Start Typing...">
+                        <button class="btn" type="submit" cursor-class="arrow">Press enter to begin your
+                            search</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <!-- 헤더 -->
+
+
+    <div class="wrapper2">
+        <!-- 로그인 -->
+        <div class="container2">
+            <div class="sign-up-container">
+                <form>
+                    <h1>Create Account</h1>
+
+                    <span>or use your email for registration</span>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button class="form_btn" cursor-class="arrow">Sign Up</button>
+                </form>
+            </div>
+            <div class="sign-in-container">
+                <form>
+                    <h1>Sign In</h1>
+                    <span>Let's start ouresti</span>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button class="form_btn" cursor-class="arrow">Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay-left">
+                    <h1>Welcome Back</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button id="signIn" class="overlay_btn" cursor-class="arrow">Sign In</button>
+                </div>
+                <div class="overlay-right">
+                    <h1>Hello, Friend</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button id="signUp" class="overlay_btn" cursor-class="arrow">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 로그인 -->
+    </div>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="left_box">
+            <p>
+                26, Jungang-daero, <br>
+                Jung-gu, Busan, <br>
+                Republic of Korea (48942)
+            </p>
+
+            <p>
+                Tel. <br>
+                051.2024.0719
+            </p>
+
+            <p>
+                Mail. <br>
+                OuResTi99@gmail.com
+            </p>
+        </div>
+
+        <div class="sns_wrap">
+            <a href="#none" class="sns_on"><img src="../images/sns_f.png" alt="페이스북"></a>
+            <a href="#none" class="sns_on"><img src="../images/sns_i.png" alt="인스타그램"></a>
+            <a href="#none" class="sns_on"><img src="../images/sns_t.png" alt="트위터"></a>
+            <a href="#none" class="sns_on"><img src="../images/sns_y.png" alt="유튜브"></a>
+        </div>
+
+        <div class="right_box">
+            <a href="#none" class="b2b_login">O'PARTNER ADMIN↗</a>
+            <div class="right_box_in">
+                <a href="#" class="top_btn"><img src="../images/top_btn2.png" alt="탑 버튼"></a>
+                <p>Copyright ⓒ ouresti., Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- 푸터 -->
+
+    <!-- 문의창 -->
+    <div class="popup_box"><a href="#none" class="help" cursor-class="arrow"></a></div>
+
+    <div class="popup">
+        <img src="../images/popup_bg.png" alt="문의창배경">
+        <img src="../images/pop_btn.png" alt="문의하기 버튼 이미지" class="pop_btn">
+        <div class="popup_in">
+            <img src="../images/pop_home.png" alt="홈 버튼 이미지" class="pop_home">
+            <img src="../images/pop_conver.png" alt="대화 버튼 이미지" class="pop_conver">
+            <img src="../images/pop_setting.png" alt="설정 버튼 이미지" class="pop_conver">
+        </div>
+    </div>
+    <!-- 문의창 -->
+
+
+    <!-- js -->
+
+    <!-- js -->
+    <!-- 메뉴창 js 라이브러리 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js'></script>
+    <!-- js 라이브러리-->
+    <script src="../script/jquery-3.7.1.min.js"></script>
+    <script src="../script/js/login.js"></script>
+    <!-- js -->
+</body>
+
+</html>
