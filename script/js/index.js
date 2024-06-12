@@ -15,7 +15,7 @@ $(function () {
                 loader.style.display = 'none';
             }, 400);
 
-        }, 6150);
+        }, 3800);
 
     });
 });
@@ -109,13 +109,13 @@ function hideVideo() {
 // 검색창
 $(function () {
     $('.side_menu .no_hover').click(function () {
-        $('.search_wrap').fadeIn();
+        $('.search_wrap').show();
     });
     $('.btn').click(function () {
-        $('.search_wrap').fadeOut();
+        $('.search_wrap').hide();
     });
     $('.search_wrap a').click(function () {
-        $('.search_wrap').fadeOut();
+        $('.search_wrap').hide();
     });
 });
 // 검색창

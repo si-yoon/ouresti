@@ -180,15 +180,15 @@ $(function () {
 
 // 검색창
 $(function () {
-  $('.nav1 .no_hover').click(function () {
-      $('.search_wrap').fadeIn();
-  });
-  $('.btn').click(function () {
-      $('.search_wrap').fadeOut();
-  });
-  $('.search_wrap a').click(function () {
-      $('.search_wrap').fadeOut();
-  });
+    $('.nav1 .no_hover').click(function () {
+        $('.search_wrap').show();
+    });
+    $('.btn').click(function () {
+        $('.search_wrap').hide();
+    });
+    $('.search_wrap a').click(function () {
+        $('.search_wrap').hide();
+    });
 });
 // 검색창
 
