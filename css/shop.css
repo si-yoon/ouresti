@@ -1,4 +1,3 @@
-
 @charset "utf-8";
 
 /* 드래그 */
@@ -547,6 +546,12 @@ header::before {
 
 .search_wrap {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 40;
 }
 
 .search {
@@ -612,7 +617,7 @@ header::before {
     outline: none;
     background: none;
     box-shadow: none;
-    padding: 10px;
+    padding: 16px;
     font-size: 16px;
     border-radius: 10px;
 }
