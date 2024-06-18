@@ -78,20 +78,20 @@ cursorModifiers.forEach(curosrModifier => {
 // 마우스
 
 
-
-
-// 영상
+// 비디오
+// 랜덤한 비디오를 선택하고 배경으로 설정하는 함수입니다.
 var videoSources = {
     "Our": ["./videos/v1.mp4", "./videos/v2.mp4", "./videos/v3.mp4"],
     "Rest": ["./videos/v4.mp4", "./videos/v5.mp4", "./videos/v6.mp4"],
     "Tea": ["./videos/v7.mp4", "./videos/v8.mp4", "./videos/v9.mp4"]
 };
 
-// 랜덤한 비디오를 선택하고 배경으로 설정하는 함수입니다.
+var currentVideoIndex = 0;
+
 function playRandomVideo(category) {
     var videoList = videoSources[category];
-    var randomIndex = Math.floor(Math.random() * videoList.length);
-    var randomVideoSource = videoList[randomIndex];
+    currentVideoIndex = Math.floor(Math.random() * videoList.length);
+    var randomVideoSource = videoList[currentVideoIndex];
 
     var videoElement = document.getElementById('randomVideo');
     var sourceElement = document.getElementById('videoSource');
@@ -99,12 +99,28 @@ function playRandomVideo(category) {
     sourceElement.src = randomVideoSource;
     videoElement.load();
     videoElement.style.display = 'block';
+
+    // 비디오가 종료되었을 때 다음 비디오를 자동으로 재생
+    // videoElement.addEventListener('timeupdate', function () {
+    //     if (videoElement.currentTime >= videoElement.duration - 1) { 
+    //         // 비디오의 재생 시간이 끝에 다다를 때
+    //         currentVideoIndex = (currentVideoIndex + 1) % videoList.length;
+    //         var nextVideoSource = videoList[currentVideoIndex];
+    //         sourceElement.src = nextVideoSource;
+    //         videoElement.load();
+    //         videoElement.play();
+    //     }
+    // });
 }
 
 function hideVideo() {
     var videoElement = document.getElementById('randomVideo');
-    videoElement.style.display = 'none';
+    if (videoElement) {
+        videoElement.style.display = 'none';
+    }
 }
+// 비디오
+
 
 // 검색창
 $(function () {
