@@ -40,7 +40,7 @@ body::-webkit-scrollbar-track {
 /* 마우스 */
 html,
 a,
-iframe {
+iframe{
     cursor: none;
 }
 
@@ -651,7 +651,7 @@ html {
     background: transparent;
     color: #fff;
     z-index: 2;
-    cursor: pointer;
+    cursor: none;
     font-weight: 100;
     letter-spacing: 2px;
     text-transform: uppercase;
